@@ -1,0 +1,14 @@
+MONGO ENGINE BRICK 019.18.2 — CERTIFICATION TARGET
+
+Release identity: World Asset + HUD Consolidation + Scalable Fidelity Foundation
+Windows certification target: build_msys2.sh 131-stage wall + canonical direct-g++ game build.
+
+Required live checks:
+- I opens inventory and closes with I / Esc.
+- Ancient Scavenger shutdown leaves one salvageable wreck; E consumes wreck once.
+- Salvage remains after save/restart and contributes cargo mass.
+- HUD shows STRESS + ARMOR and contains no SHLD player telemetry.
+- Matter Ladder visual negative space / toroids read correctly at close range.
+- Orbital Vessel exterior camera no longer passes freely through major hull volumes.
+- F6 cycles EFFICIENT/BALANCED/HIGH/ULTRA with no gameplay-state change.
+- BALANCED remains the GTX 1070-class visual baseline.

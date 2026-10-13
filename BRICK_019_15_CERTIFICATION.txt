@@ -1,0 +1,45 @@
+MONGO ENGINE BRICK 019.15 — LOCAL CERTIFICATION
+================================================
+
+Scope
+-----
+ALIEN ECOLOGY + MACHINE NAVIGATION
+
+Implemented
+-----------
+- geography-aware clustered ecology instead of uniform candy-colored sprinkles
+- restrained grassland/wetland/sand/mineral palettes
+- shoreline growth driven by actual shore height + moisture
+- rarer bright blooms and rarer giant needle outcrops
+- modest night-water readability lift without a new render pass
+- authoritative compass convention: NORTH=-Z, EAST=+X
+- scrolling cardinal/tick compass instead of fixed W/N/E decoration
+- shared escape-pod world anchor between renderer and navigation
+- nearby ANOMALOUS METALLIC RETURN bearing/range sensor cue
+- negative-buoyancy baseline Frontier chassis
+- submerged BOTTOM_TRANSIT instead of automatic surface swimming
+- underwater slope authority and 12 m Light Expedition pressure soft gate
+- future buoyancy/ballast/aquatic propulsion remains configuration-driven
+- traversal/capability alert dwell raised to 4 seconds
+
+Local evidence
+--------------
+- 69/69 Python contract files PASS
+- 13/13 relevant pure C++ groups PASS:
+  frontier navigation; water traversal; planetary traversal/verticality;
+  traversal authority; Frontier huge-world; Frontier 3D math; planetscape;
+  planet atmosphere; orbit camera; celestial system; terrain-camera authority;
+  Frontier training intent; character persistence
+- build_msys2.sh stage sequence: contiguous 1..125 PASS
+- build_msys2.sh syntax PASS
+- build_fast_msys2.sh syntax PASS
+- no local build products / pycache included in source package
+
+Authority boundary
+------------------
+This Linux container does not provide the Windows MSYS2 UCRT64 SDL3/OpenGL
+runtime. Final C++ application link, GLSL driver acceptance, compass visual
+behavior, underwater presentation and GTX 1070 performance remain Windows live
+authority.
+
+Windows full-build target: 125/125

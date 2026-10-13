@@ -1,0 +1,23 @@
+MONGO ENGINE — BRICK 019.11.1
+TERRAIN MATERIAL NATURALIZATION
+
+LOCAL CERTIFICATION SCOPE
+- Terrain naturalization contract
+- Terrain Material System v2 regression contract
+- Renderer foundation regression contract
+- Surface material regression contract
+- Dawn-vista regression contract
+- Frontier beauty/material regressions
+- Python contract wall where executable in this environment
+- Pure C++ world/celestial tests where SDL3 is not required
+
+FINAL AUTHORITY
+Windows MSYS2 UCRT64 + SDL3/OpenGL on GTX 1070.
+Expected full Windows target: 113/113.
+
+VISUAL ACCEPTANCE
+- Foreground terrain no longer reads as square procedural tiles.
+- Mineral Scar no longer looks uniformly glitter-covered.
+- Broad geological variation remains visible.
+- Shoreline wetness reads as broad damp reflection rather than stippled sparkle.
+- 60 UPS remains stable during normal Frontier traversal.

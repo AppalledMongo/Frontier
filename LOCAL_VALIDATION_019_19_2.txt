@@ -1,0 +1,21 @@
+MONGO ENGINE 019.19.2 LOCAL VALIDATION
+
+PASS 82/82 Python test files.
+PASS tests/test_frontier_refit.cpp — 9/9 focused assertions.
+PASS tests/test_traversal_authority.cpp — 9/9 focused assertions.
+PASS tests/test_planetary_traversal_verticality.cpp — 10/10 focused assertions.
+PASS tests/test_character_persistence.cpp — 43/43 focused assertions.
+
+Focused C++ total: 4 groups / 71 assertions PASS.
+
+Validated architecture:
+- Equipped mobility hardware is the live traversal authority.
+- Biped-blocked / Spider-allowed same-slope proof passes on deterministic terrain.
+- Canonical slope and pressure soft gates remain intact.
+- Negative buoyancy / bottom transit remain intact.
+- Schema 9 persists selected/equipped schematics and fabricated-rig ownership.
+- Restore rehydrates the equipped rig into live FrontierWorld authority.
+- 019.19.1 physical inventory separation regression remains green.
+
+Windows direct-g++ SDL3/OpenGL application compile: NOT CLAIMED in local Linux harness (SDL3 development package unavailable).
+Live render/gameplay: REQUIRES authoritative Windows UCRT64 / GTX 1070 test.

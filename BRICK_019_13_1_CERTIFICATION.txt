@@ -1,0 +1,14 @@
+MONGO ENGINE BRICK 019.13.1 — TRAVERSAL AUTHORITY + DEPTH TELEMETRY
+
+LOCAL CERTIFICATION TARGETS
+- directional live slope enforcement
+- canonical player-facing steep-slope warning
+- downhill retreat remains possible
+- bottom depth separated from robot submersion depth
+- pressure load and rating exposed in aquatic HUD
+- deep bathymetry surface-only advisory
+- canonical pressure soft gate preserved
+- parent 019.13 landforms, water and escape-pod site preserved
+
+WINDOWS FULL BUILD TARGET: 119/119
+Final SDL3/OpenGL/GTX 1070 live authority remains Windows.

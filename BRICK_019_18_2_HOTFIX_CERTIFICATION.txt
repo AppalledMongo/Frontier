@@ -1,0 +1,16 @@
+MONGO ENGINE BRICK 019.18.2 HOTFIX CERTIFICATION
+
+Windows failure reproduced from user log:
+FrontierRenderer3D.cpp:9380: frontier_static_cache_valid_ was not declared.
+
+ROOT CAUSE
+A stale cache member name was introduced in set_fidelity_tier(). The actual renderer member is frontier_static_site_cache_valid_.
+
+FIX
+- Replaced the stale identifier with frontier_static_site_cache_valid_.
+- Added a contract assertion that set_fidelity_tier invalidates the actual static-site cache and that the stale identifier is absent.
+
+LOCAL VERIFICATION
+- test_frontier_static_site_cache_contract.py: PASS (including new regression check).
+- test_scalable_fidelity.cpp: PASS 5/5.
+- Full SDL3/OpenGL FrontierRenderer3D translation-unit compile is not available in this Linux harness because SDL3 headers are not installed. Windows direct-g++ remains final compile/render authority.

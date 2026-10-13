@@ -1,0 +1,20 @@
+Mongo Engine Brick 019.17.1 — independent local verification
+Date: 2026-10-12 (America/Los_Angeles)
+
+PASS: 75/75 executable Python contract files.
+PASS: 19/19 relevant pure C++ regression groups compiled and executed.
+PASS: build_msys2.sh stage map is contiguous 1..129.
+PASS: bash syntax for full/dev/checkpoint/fast MSYS2 scripts.
+PASS: Python syntax for incremental builder and hard-surface graphics contract.
+
+Platform authority still required:
+- Windows MSYS2 UCRT64 direct g++ build
+- SDL3/OpenGL shader compile/link
+- GTX 1070 live visual/performance test
+
+Primary live checks:
+1. Unit 001 silhouette visibly benefits from bevel/taper/ring primitives.
+2. F1 DEBUG shows hard-surface instance count.
+3. Solar disc/halo does not bleed through the horizon at full night.
+4. Twilight afterglow still exists near sunset/sunrise.
+5. Stars, moons, sibling planets, rings, water, traversal and persistence remain stable.

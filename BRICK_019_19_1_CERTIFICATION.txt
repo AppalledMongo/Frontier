@@ -1,0 +1,18 @@
+MONGO ENGINE BRICK 019.19.1 — PHYSICAL INVENTORY SEPARATION
+LOCAL CERTIFICATION
+
+IMPLEMENTED
+- Unit 001 cargo and Orbital Vessel 001 stores are distinct persistent inventories.
+- Matter Ladder transfers all currently implemented physical cargo categories from Unit 001 to vessel stores.
+- Orbital I key opens Vessel Stores; Frontier I key opens Unit 001 inventory.
+- Orbital construction continues to spend vessel-owned blue-crystal stock.
+- Character schema advanced to 8 with schema-7 migration preserving prior infrastructure/crystal stock.
+- Direct E interaction on empty space reports a generic target failure rather than a false crystal-specific message.
+
+LOCAL GATES
+PASS: 81 / 81 Python contract files.
+PASS: character-persistence C++ regression including schema-8 vessel stores and restart recovery.
+PASS: orbital-infrastructure C++ regression.
+
+NOT CERTIFIED LOCALLY
+- SDL3/OpenGL Windows translation units and live rendering remain authoritative on the user's UCRT64 Windows build / GTX 1070 test machine.

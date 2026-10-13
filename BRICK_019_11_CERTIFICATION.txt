@@ -1,0 +1,35 @@
+MONGO ENGINE — BRICK 019.11
+TERRAIN MATERIAL SYSTEM V2
+LOCAL CERTIFICATION
+
+STATUS
+- 59/59 Python contract files: PASS
+- Terrain Material System v2 isolated contract: PASS
+- Frontier huge-world C++ tests: PASS
+- Procedural planetscape C++ tests: PASS
+- Celestial-system C++ tests: PASS
+- build_msys2.sh syntax: PASS
+- build_fast_msys2.sh syntax: PASS
+- 112-stage build numbering: PASS (1..112, no gaps/duplicates)
+
+LOCAL ENVIRONMENT LIMIT
+The container does not provide SDL3 headers, so FrontierRenderer3D.cpp and the
+final SDL3/OpenGL executable cannot be compiled here. The package therefore does
+NOT claim final renderer certification.
+
+FINAL AUTHORITY
+Run BUILD_WINDOWS.bat on the Windows MSYS2 UCRT64 / SDL3 / OpenGL target.
+Expected full-build target: 112/112.
+Then live-test the Frontier on the GTX 1070 and compare FPS/UPS against 019.10.
+
+LIVE VISUAL CHECKS
+1. Grassland/highland/sand/frost/wetland/mineral scar should react differently
+   to light instead of differing only by color.
+2. Steep rock faces should show continuous world-space breakup without obvious
+   top-down stretching.
+3. Shoreline ground should darken and catch tighter reflected highlights.
+4. Exposed slopes should read more like rock than flat carpet.
+5. Dawn-vista sky, water, mist, far silhouettes, HUD and gameplay must remain
+   intact.
+6. Watch GPU/frame cost. 019.11 adds fragment ALU, not texture fetches or draw
+   calls; Windows live profiling decides whether the quality/cost trade is kept.

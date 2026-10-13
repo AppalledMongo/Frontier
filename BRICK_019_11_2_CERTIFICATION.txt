@@ -1,0 +1,21 @@
+MONGO ENGINE — BRICK 019.11.2
+TERRAIN MATERIAL OWNERSHIP
+
+LOCAL SOURCE / CONTRACT CERTIFICATION: PASS
+
+Evidence:
+- 61/61 Python contract files passed.
+- 6 relevant pure C++ world/celestial groups passed.
+- Shell syntax passed for full and fast MSYS2 build scripts.
+- Full build-stage numbering verified 1..114 with no missing/duplicate stages.
+- Existing 16x16 terrain mesh retained.
+- Terrain vertex albedo tint neutralized.
+- Biome palette and continuous climate variation moved to fragment material path.
+- Fine material response derivative-filtered for distance stability.
+- No new texture fetches, draw calls or terrain geometry.
+- Gameplay/world sampling and persistence architecture unchanged.
+
+WINDOWS CERTIFICATION: PENDING USER LIVE BUILD
+The current environment has no SDL3 development package, so Windows SDL3/OpenGL compilation, GLSL driver acceptance, and GTX 1070 frame performance remain the authoritative final gate.
+
+Expected Windows full-build target: 114/114.

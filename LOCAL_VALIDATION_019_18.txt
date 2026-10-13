@@ -1,0 +1,20 @@
+MONGO ENGINE BRICK 019.18 — LOCAL VALIDATION
+
+PASS: 77/77 Python contract files (bounded batches)
+PASS: tests/test_frontier_world.cpp + FrontierWorld.cpp + CelestialSystem.cpp
+PASS: tests/test_planetscape.cpp
+PASS: tests/test_water_traversal.cpp
+PASS: tests/test_planetary_traversal_verticality.cpp
+PASS: tests/test_traversal_authority.cpp
+PASS: tests/test_terrain_camera_authority.cpp
+PASS: tests/test_celestial_system.cpp
+PASS: build_dev_msys2.sh / build_checkpoint_msys2.sh / build_msys2.sh shell syntax
+PASS: incremental_build.py and living-world contract Python syntax
+
+NOT CLAIMED LOCALLY:
+- SDL3/OpenGL link (SDL3 unavailable in Linux harness)
+- live GLSL behavior
+- Windows UCRT64 runtime behavior
+- GTX 1070 visual/performance authority
+
+Those remain BUILD_DEV_WINDOWS.bat / BUILD_WINDOWS.bat live-test responsibilities.

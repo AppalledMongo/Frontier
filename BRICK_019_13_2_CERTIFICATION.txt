@@ -1,0 +1,22 @@
+MONGO ENGINE BRICK 019.13.2 — TERRAIN CAMERA + PERFORMANCE AUTHORITY
+
+LOCAL CERTIFICATION
+- 66/66 Python contract files PASS in three controlled chunks.
+- 9/9 relevant pure C++ world/camera/celestial/water/traversal groups PASS.
+- New terrain-camera authority C++ test PASS.
+- New terrain-camera/performance architecture contract PASS.
+- Existing traversal, water, material, HUD, renderer and persistence contracts preserved.
+
+ARCHITECTURE
+- Heightfield camera occlusion/clearance uses floating-origin relative coordinates.
+- Deterministic surface-decor VBO caches until player origin chunk changes.
+- No extra terrain noise octave.
+- No terrain mesh-density increase.
+- No gameplay/persistence schema change.
+
+FINAL AUTHORITY
+The local environment does not contain SDL3 development headers/OpenGL Windows
+linkage, so BUILD_WINDOWS.bat on MSYS2 UCRT64 + the GTX 1070 is the final
+C++/SDL/GLSL/camera/performance gate.
+
+WINDOWS FULL BUILD TARGET: 121/121

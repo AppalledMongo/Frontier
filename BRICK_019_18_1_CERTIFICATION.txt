@@ -1,0 +1,25 @@
+MONGO ENGINE — BRICK 019.18.1
+WORLD / LOGISTICS / ORBITAL VESSEL CONSOLIDATION
+
+LOCAL RELEASE GATE: PASS
+
+Implemented:
+- first-class biome ecotones and blended ecology/material ownership
+- measured terrain-density increase for foreground shape quality
+- star-density / horizon-extinction cleanup
+- Ancient Scavenger dormant wake and intimidating archaeological redesign
+- physical blue-crystal cargo mass and staged encumbrance
+- soft overload pickup gate
+- Matter Ladder surface-to-orbit cargo transfer
+- persistent Orbital AI crystal stockpile (schema v5)
+- Orbital Vessel 001 first exterior massing pass
+- orbital V-toggle interior/exterior inspection camera
+- Systemic Sandbox Design Doctrine for Brick 019.19 architecture
+
+Local validation:
+- 78/78 Python contract files PASS
+- 9 relevant pure C++ regression groups PASS
+- shell syntax / Python syntax / diff hygiene PASS
+
+Windows full certification target: 130/130.
+Windows SDL3/OpenGL 3.3 and GTX 1070 live testing remain final authority.

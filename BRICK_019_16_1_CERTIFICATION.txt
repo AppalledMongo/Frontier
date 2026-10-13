@@ -1,0 +1,24 @@
+MONGO ENGINE BRICK 019.16.2 — RUNTIME STAGING HOTFIX
+
+Purpose:
+- Fix DEV/FULL builds that compiled successfully but launched without SDL3/UCRT64 runtime DLLs.
+- Preserve the Brick 019.16 Scavenger Android + Visual Fidelity game code.
+
+Root cause:
+- The incremental builder used shutil.which() to locate DLL files.
+- Under MSYS2 POSIX Python, DLLs are not executable commands, so which() could return no result even when the DLLs existed in /ucrt64/bin.
+
+Fix:
+- Resolve GCC runtime DLLs with g++ -print-file-name where supported.
+- Search the active compiler bin, MINGW_PREFIX/bin, SDL3 pkg-config prefix/bin, and /ucrt64/bin.
+- Copy SDL3.dll, libgcc_s_seh-1.dll, libstdc++-6.dll, and libwinpthread-1.dll beside mongo_game.exe.
+- Fail the build if any required runtime DLL cannot be located or verified after staging.
+- RUN_GAME.bat performs a preflight and refuses to launch with incomplete runtime staging.
+
+Local validation:
+- development-build pipeline contract: PASS
+- Python syntax compile: PASS
+- shell syntax: PASS
+
+Windows authority:
+- BUILD_DEV_WINDOWS.bat should print [RUNTIME] lines for all four DLLs and then launch normally.

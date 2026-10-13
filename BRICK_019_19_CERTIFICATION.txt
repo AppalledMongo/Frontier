@@ -1,0 +1,14 @@
+MONGO ENGINE — BRICK 019.19
+PERSISTENT INFRASTRUCTURE FOUNDATION
+
+LOCAL VALIDATION TARGET
+- 019.19 static architecture contract
+- orbital infrastructure C++ simulation regression
+- character persistence / schema-7 regression
+- inherited Python contract wall
+
+AUTHORITATIVE WINDOWS GATES
+- BUILD_DEV_WINDOWS.bat must compile the full SDL3/OpenGL application under MSYS2 UCRT64.
+- User live render/gameplay on the GTX 1070-class baseline is final authority.
+
+Do not equate local CONTRACT PASS with Windows COMPILE PASS or LIVE PASS.

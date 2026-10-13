@@ -1,0 +1,16 @@
+MONGO ENGINE BRICK 019.13 — PLANETARY TRAVERSAL + VERTICALITY
+
+Intended contract:
+- preserve 019.12.1 water/immersion architecture
+- replace rolling-noise terrain with layered procedural landforms
+- create >50 m local elevation relief and real inaccessible escarpments
+- deepen existing water without globally raising sea level
+- provide a nearby >10 m starter watershed
+- establish Light/Treads/Spider mobility profiles
+- enforce the Light Unit 38-degree terrain ceiling
+- provide soft pressure gating instead of instant-death exploration traps
+- add persistent crashed escape pod + seeded beach wreckage
+- keep the escape site on the static cached procedural render path
+
+Full Windows acceptance target: 118/118.
+Final SDL3/OpenGL and GTX 1070 behavior must be certified on Windows.

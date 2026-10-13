@@ -1,0 +1,74 @@
+MONGO ENGINE BRICK 019.19.2 — FRONTIER UNIT REFIT FOUNDATION
+
+- The physical Unit 001 cradle aboard Orbital Vessel 001 is now the canonical Frontier Unit Refit Bay.
+- Added persistent Biped Expedition and Spider Traversal mobility schematics.
+- Added real visible eight-leg Spider geometry instead of a stat-only mode.
+- Live slope/pressure/bottom-transit authority now reads the equipped mobility profile rather than hardcoded Light Expedition legs.
+- Spider raises maximum slope capability from 38 to 60 degrees while trading speed, mass, power draw, and stability/load behavior.
+- First Spider fabrication spends Vessel Stores: 18 Blue Crystal, 12 Ancient Alloy Fragment, 6 Ancient Actuator Servo, 2 Manipulator Cluster.
+- Refit Bay preview reports selected configuration engineering values and renders the selected physical rig.
+- `F4` deployment reconstructs Unit 001 through the Matter Ladder when the selected fabricated rig differs from the deployed rig.
+- Character schema advanced to 9 with equipped/selected schematic IDs and fabricated-rig ownership; restore rehydrates live traversal authority.
+- Added deterministic Biped-blocked / Spider-allowed same-slope C++ proof plus a dedicated 019.19.2 architecture contract.
+- Preserved negative buoyancy, bottom transit, canonical slope/pressure soft gates, physical inventory ownership, and the GTX 1070 scalable-fidelity rules.
+
+MONGO ENGINE BRICK 019.19.1 — PHYSICAL INVENTORY SEPARATION
+
+- Added separate persistent Orbital Vessel stores for blue crystals and all current Ancient salvage categories.
+- Matter Ladder now transfers all implemented Unit 001 physical cargo into vessel-owned stores.
+- `I` is contextual: Unit 001 inventory on the frontier, Vessel Stores in orbital control.
+- Orbital construction continues to spend ship-owned blue-crystal stock.
+- Direct empty-space `E` interaction now reports `NO INTERACTABLE TARGET WITHIN REACH` instead of incorrectly naming crystals.
+- Character schema advanced to 8; schema 7 saves migrate with empty orbital salvage stores while preserving prior crystal stock and infrastructure.
+
+MONGO ENGINE BRICK 019.19 — PERSISTENT INFRASTRUCTURE FOUNDATION
+
+- Added seven stable Pelagos orbital construction sites using axial-hex site coordinates.
+- Added persistent station component graphs with stable module ids, cell coordinates, deck, orientation, and official module type.
+- Added Construction Core, Structural Truss, Reactor, Radiator, Cargo, Dock, Refinery, Sensor, and Heavy Hardpoint Frame definitions.
+- Added derived station engineering totals: mass, structural capacity, site mass limit, power, thermal, cargo, and hardpoints.
+- Construction consumes real Orbital AI blue-crystal stock delivered by the Matter Ladder.
+- Power/thermal deficits warn but do not arbitrarily forbid a player's design.
+- Structural over-capacity and disconnected modules are rejected as physical constraints.
+- Added B orbital construction planner with site selection, hex-cell cursor, rotation, placement, and deconstruction controls.
+- Added exterior visualization for built modules and build-site/cursor overlays.
+- Added schema 7 persistence for orbital infrastructure and dirty-state tracking.
+- Added initial GlobalPosition / ReferenceFrameId large-world vocabulary for future seamless flight.
+- Added dedicated C++ orbital-infrastructure regression and 019.19 contract test.
+
+---
+
+MONGO ENGINE BRICK 019.18.2 — WORLD ASSET + HUD CONSOLIDATION
+
+PLAYER SYSTEMS
+- I opens the first real Unit 001 inventory / cargo / salvage panel.
+- Ancient Scavenger shutdowns leave one physical salvageable wreck.
+- Deterministic weighted salvage table: alloy fragments + chances for servos, optics, induction coils, memory lattices and manipulator clusters.
+- Salvage has cargo mass, affects encumbrance and persists in save schema v6.
+- Player-facing machine telemetry uses STRESS + ARMOR instead of vague FLUX / SHLD labels.
+
+WORLD / ART
+- Matter Ladder pass II: containment toroids, induction machinery and better negative space.
+- Ancient Scavenger pass II: restrained amber service anatomy and distinct dead-wreck presentation.
+- Orbital Vessel 001 exterior inspection receives compound camera collision against major vessel volumes.
+
+SCALABLE FIDELITY
+- F6 cycles EFFICIENT / BALANCED / HIGH / ULTRA.
+- BALANCED preserves the GTX-1070-oriented 019.18.1 presentation budget.
+- Terrain/vista radius, shadow resolution and shadow-refresh cadence scale by tier.
+- Simulation/gameplay authority does not change with fidelity.
+- Future MMO entity / FX / decor budgets are represented in the profile architecture.
+
+NEXT
+- 019.19: Persistent Infrastructure Foundation — orbital hexes, construction cores, module graphs, engineering constraints and persistent player-built structures.
+
+019.18.2 HOTFIX
+- Fixed Windows compile failure in FrontierRenderer3D::set_fidelity_tier(): the fidelity switch now invalidates the real frontier_static_site_cache_valid_ member instead of the stale/nonexistent frontier_static_cache_valid_ name.
+- Added a regression contract so this cache-name mismatch cannot silently return.
+- Added LARGE_WORLD_ARCHITECTURE_DOCTRINE.md after research into large-world/seamless-space techniques and failure modes.
+
+019.18.2 HOTFIX 2
+- Windows direct-g++ compile had already passed after HOTFIX 1.
+- Fixed the remaining DEV smoke-contract failure caused by README lineage markers being condensed during 019.18.2 documentation cleanup.
+- Restored explicit historical documentation markers required by inherited smoke contracts for 019.16.2, 019.16.6, 019.17, 019.17.1, 019.18 and the 115/115 + 116/116 shoreline/immersion milestones.
+- No gameplay/rendering behavior changed in this documentation-only hotfix.

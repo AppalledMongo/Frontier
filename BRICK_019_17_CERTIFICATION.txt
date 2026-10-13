@@ -1,0 +1,18 @@
+MONGO ENGINE BRICK 019.17 — ENGINE VISUAL EXPANSION
+
+LOCAL CERTIFICATION
+- Python contract files: 74 / 74 PASS
+- Relevant pure C++ groups: 11 / 11 PASS
+- Full build-stage sequence: 128 / 128 contiguous
+- MSYS2 shell syntax: PASS
+- Native cylinder primitive contract: PASS
+- Cylinder instancing/static-cache contract: PASS
+- Continuous cable / hard-surface modeling contract: PASS
+- Seeded stellar-cluster contract: PASS
+- Orbital nebula filament/dust-lane contract: PASS
+- Seeded planetary aurora contract: PASS
+- Sun-lit sibling planet + atmospheric limb contract: PASS
+- Ring groove/front-back/ring-shadow contract: PASS
+
+WINDOWS AUTHORITY STILL REQUIRED
+The final SDL3/OpenGL 3.3 build, GLSL driver compile, and GTX 1070 live performance/visual validation must be performed on Windows UCRT64.

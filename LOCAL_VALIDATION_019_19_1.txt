@@ -1,0 +1,8 @@
+MONGO ENGINE 019.19.1 LOCAL VALIDATION
+
+PASS 81/81 Python contract files.
+PASS tests/test_character_persistence.cpp + persistence/world dependencies.
+PASS tests/test_orbital_infrastructure.cpp.
+
+Windows direct-g++ SDL3/OpenGL compile: NOT AVAILABLE IN LOCAL LINUX HARNESS.
+Live render/gameplay: REQUIRES USER WINDOWS TEST.

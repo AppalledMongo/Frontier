@@ -1,0 +1,24 @@
+MONGO ENGINE BRICK 019.17.1 — HARD-SURFACE GRAPHICS ENGINE
+
+LOCAL CONTRACT STATUS: PASS
+- Python contract wall: 75/75
+- Relevant pure C++ groups: 19 PASS
+- Full build stage map: 129/129 sequence verified
+- Shell/python syntax: PASS
+
+WINDOWS AUTHORITY REQUIRED
+- MSYS2 UCRT64 + g++ direct build
+- SDL3/OpenGL shader compile/link
+- GTX 1070 visual/performance validation
+
+Primary live checks:
+1. Unit 001 bevel/taper/ring geometry visibly changes silhouette.
+2. F1 DEBUG reports HS instance count.
+3. Sun disc/halo does not bleed through the horizon at full night.
+4. Twilight afterglow remains visible shortly after sunset/sunrise.
+5. Existing stars, nebulae, sibling planet and ring rendering remain stable.
+
+DEV PIPELINE HOTFIX
+- Windows absolute-target GCC dependency files are parsed without treating the drive-letter colon as the Makefile rule separator.
+- Malformed/unreadable dependency metadata degrades safely to recompilation.
+- Regression: tests/test_incremental_dependency_parser_contract.py PASS locally.

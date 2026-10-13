@@ -1,0 +1,26 @@
+MONGO ENGINE BRICK 019.16 — SCAVENGER ANDROID + VISUAL FIDELITY
+
+LOCAL CERTIFICATION
+- Python source/architecture contract files: 72/72 PASS
+- Pure C++ non-SDL world/camera/traversal groups: 11/11 PASS
+- Development build pipeline contract: PASS
+- Dev/release workflow contract: PASS
+- shell syntax validation: PASS
+- build script stage integrity: 127/127
+
+DEVELOPMENT PIPELINE
+- BUILD_DEV_WINDOWS.bat: incremental direct-g++ + smoke contracts + launch
+- BUILD_CHECKPOINT_WINDOWS.bat: incremental direct-g++ + Python contract wall + launch
+- BUILD_FAST_WINDOWS.bat: compatibility alias to BUILD_DEV_WINDOWS.bat
+- BUILD_WINDOWS.bat: full regression wall + clean canonical build + last-known-green snapshot
+- RUN_GAME.bat: canonical project-root launch; nonzero exit remains visible
+
+IMPORTANT DIAGNOSIS
+The legacy FAST path launched from build-direct while the full build launched from
+project root. This could change relative asset/data behavior. 019.16 removes the
+divergent working-directory rule and uses project root for all developer launches.
+
+WINDOWS AUTHORITY
+Final SDL3/OpenGL compilation, GLSL driver validation, silhouette review, incremental
+compile behavior and GTX 1070 performance remain authoritative on the user's
+Windows/MSYS2 UCRT64 machine.

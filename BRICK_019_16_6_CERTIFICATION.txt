@@ -1,0 +1,24 @@
+MONGO ENGINE BRICK 019.16.6 — MACRO SILHOUETTE PASS IV
+
+LOCAL CERTIFICATION
+- Python contract files: 73/73 PASS (parallel execution)
+- Scavenger Android visual-fidelity contract: PASS
+- Modeling-polish contract: PASS
+- Pure C++ non-SDL world/camera/traversal groups: retained from parent; rerun where available
+- Full build-stage sequence contract: 127-stage wall retained
+- Development build pipeline / UCRT64 runtime-chain contracts retained
+
+LIVE MODEL CHANGES
+- Wider planted stance and heavier foot/toe silhouette
+- Larger knee bearings and broader shin/thigh armor
+- Narrower pelvis/waist under a broader shoulder line
+- Larger outboard shoulder joints and armor
+- Enlarged, more asymmetric utility/manipulator arms
+- Longer sensor boom with larger recessed orange optic and blue auxiliary optic
+- Deeper survival rig with larger external tanks, beacon canister and folding salvage rack
+- Larger thermal shroud pieces for rear/side identity
+- Stronger cream/ochre/steel separation for gameplay-distance readability
+- Slightly tighter default Frontier chase camera while keeping the full zoom range
+
+WINDOWS AUTHORITY
+Final SDL3/OpenGL compile, GLSL driver acceptance, all-angle in-engine readability, and GTX 1070 performance remain authoritative on the user's Windows MSYS2 UCRT64 system.

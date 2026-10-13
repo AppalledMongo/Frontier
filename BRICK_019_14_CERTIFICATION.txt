@@ -1,0 +1,17 @@
+MONGO ENGINE BRICK 019.14 — ATMOSPHERIC DEPTH + HERO LANDSCAPE
+
+GOALS
+- Preserve 019.13 dramatic planetary relief and 019.13.2 performance recovery.
+- Add valley, mid-distance and distant-ridge atmospheric separation.
+- Reduce hard visual biome wedges on steep/high terrain with continuous ecotones.
+- Root far hero silhouettes into geography and reduce skyline clutter.
+- Avoid terrain mesh-density increases or a new scene render pass.
+
+WINDOWS FULL BUILD TARGET: 122/122
+FINAL AUTHORITY: MSYS2 UCRT64 + SDL3/OpenGL + GTX 1070 live test.
+
+LOCAL EVIDENCE
+- 67/67 Python contract files PASS.
+- 10/10 pure C++ world/camera/celestial/water/traversal groups PASS.
+- 122/122 stage sequence PASS.
+- build_msys2.sh shell syntax PASS.

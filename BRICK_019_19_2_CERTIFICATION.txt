@@ -1,0 +1,26 @@
+MONGO ENGINE BRICK 019.19.2 — FRONTIER UNIT REFIT FOUNDATION
+LOCAL CERTIFICATION
+
+IMPLEMENTED
+- Canonical Frontier Unit Refit Bay at the physical Unit 001 cradle aboard Orbital Vessel 001.
+- Biped Expedition Rig and Spider Traversal Rig stock schematics.
+- Visible eight-leg Spider locomotion geometry in surface render and orbital refit preview.
+- Equipped mobility hardware drives live slope, pressure, water-bottom state, and movement-speed authority.
+- Spider first fabrication spends vessel-owned physical stores: 18 Blue Crystal, 12 Ancient Alloy Fragment, 6 Ancient Actuator Servo, 2 Manipulator Cluster.
+- Selected and deployed schematics are distinct; F4 remains attention transfer unless a different fabricated rig is staged, in which case Matter Ladder reconstruction occurs.
+- Schema 9 persists equipped/selected schematic IDs and fabricated-rig ownership.
+- Refit engineering panel reports slope, speed, stability, mass, cargo, and power tradeoffs.
+- Modal overlays suppress underlying intent UI and remain visible when the ordinary HUD is hidden.
+
+LOCAL GATES
+PASS: 82 / 82 Python test files.
+PASS: Frontier refit C++ proof, 9 / 9 assertions.
+PASS: traversal-authority C++ regression, 9 / 9 assertions.
+PASS: planetary traversal/verticality C++ regression, 10 / 10 assertions.
+PASS: character-persistence C++ regression, 43 / 43 assertions.
+
+GATE STATUS
+CONTRACT GREEN: YES (local).
+FOCUSED C++ GREEN: YES (local, non-SDL systems).
+WINDOWS APPLICATION COMPILE GREEN: NOT CLAIMED — authoritative UCRT64 build still required.
+LIVE GREEN: NOT CLAIMED — authoritative GTX 1070 Windows render/gameplay test still required.

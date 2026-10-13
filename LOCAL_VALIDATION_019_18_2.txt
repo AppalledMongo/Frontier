@@ -1,0 +1,12 @@
+MONGO ENGINE BRICK 019.18.2 — LOCAL VALIDATION
+
+PASS: 78/78 Python *contract.py files (executed in bounded batches).
+PASS: test_frontier_world.cpp
+PASS: test_character_persistence.cpp
+PASS: test_crystal_resource_loop.cpp
+PASS: test_cargo_logistics.cpp
+PASS: test_ancient_salvage.cpp
+PASS: test_scalable_fidelity.cpp
+PASS: test_core_flux.cpp (player-facing terminology now machine stress).
+
+SDL3/OpenGL Windows renderer is not available in this Linux validation environment. Windows/UCRT64 live rendering remains the final authority.

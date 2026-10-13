@@ -1,0 +1,19 @@
+MONGO ENGINE — BRICK 019.18.2 HOTFIX 2
+
+WINDOWS LIVE REPORT ROOT CAUSE
+- Direct C++ compile/link: PASS on the user's UCRT64 Windows environment after HOTFIX 1.
+- DEV smoke wall then failed at tests/test_living_world_foundation_contract.py because README.md no longer contained the exact historical Brick 019.18 documentation marker expected by the inherited contract.
+- A complete audit of every README-dependent DEV smoke contract found additional historical markers that would have failed later in the same run.
+
+FIX
+- Restored all inherited README lineage markers in one compatibility section rather than chasing the smoke wall one failure at a time.
+- No C++ gameplay/rendering code changed.
+
+LOCAL SMOKE VALIDATION
+- 13/13 DEV smoke scripts PASS after the documentation repair.
+- Windows compile result from user: 28/28 translation units + link PASS.
+
+GATES
+- CONTRACT: PASS for DEV smoke wall locally.
+- WINDOWS COMPILE: PASS as reported by user before the documentation-only smoke failure.
+- LIVE RENDER: still requires user launch/test.

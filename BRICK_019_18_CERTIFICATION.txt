@@ -1,0 +1,25 @@
+MONGO ENGINE — BRICK 019.18 — LIVING WORLD FOUNDATION
+
+Scope:
+- deterministic terrain ecology fields
+- habitat-driven vegetation density and canopy hierarchy
+- ecology-driven analytic atmosphere/weather coverage
+- world-owned ambient Sky Skimmer wildlife foundation
+
+Validation:
+- local pure C++ FrontierWorld ecology/wildlife tests
+- living-world Python contract
+- existing visual/traversal/render contracts
+- Windows SDL3/OpenGL/GTX 1070 remains final live authority
+
+Local result:
+- 77/77 Python contract files PASS (executed in bounded batches)
+- FrontierWorld ecology/wildlife C++ PASS
+- planetscape C++ PASS
+- water traversal C++ PASS
+- planetary verticality C++ PASS
+- traversal authority C++ PASS
+- terrain camera authority C++ PASS
+- celestial system C++ PASS
+- build shell syntax + Python syntax PASS
+- SDL3 not available in Linux validation harness; Windows live build remains authority

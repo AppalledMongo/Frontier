@@ -1,0 +1,24 @@
+MONGO ENGINE — BRICK 019.12
+WATER / AQUATIC OPTICS
+
+STATUS: READY FOR WINDOWS LIVE CERTIFICATION
+
+Implemented:
+- cached depth-aware water mesh sourced from authoritative terrain height
+- one-draw water submission retained
+- shallow/deep optical color separation
+- Schlick Fresnel sky response
+- world-anchored multi-scale waves
+- screen-footprint and distance filtered fine ripples
+- restrained sun/moon glints
+- shoreline alpha transition and broken foam
+- no planar reflection pass
+- no water texture dependency
+
+Local validation:
+62/62 Python contract files PASS
+7/7 pure C++ world/celestial/water traversal groups PASS
+115/115 build-stage numbering verified
+Shell syntax PASS
+
+Final Windows SDL3/OpenGL build/live test remains authoritative.
